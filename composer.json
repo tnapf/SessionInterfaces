@@ -1,0 +1,17 @@
+{
+    "name": "tnapf/sessioninterfaces",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tnapf\\SessionInterfaces\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michael Snedeker",
+            "email": "rsnedeker20@gmail.com"
+        }
+    ],
+    "require": {}
+}

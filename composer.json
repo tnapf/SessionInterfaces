@@ -4,7 +4,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Tnapf\\SessionInterfaces\\": "src/"
+            "Tnapf\\SessionInterfaces\\": "src/",
+            "Tnapf\\MysqlSessions\\": "mysql/"
         }
     },
     "authors": [
@@ -13,5 +14,9 @@
             "email": "rsnedeker20@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "commandstring/utils": "^1.4",
+        "tnapf/router": "^1.1",
+        "tnapf/pdo": "^1.0"
+    }
 }

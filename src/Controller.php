@@ -1,8 +1,8 @@
 <?php
 
-namespace Tnapf\Sessions\Interfaces;
+namespace Tnapf\SessionInterfaces;
 
-use Tnapf\Sessions\Exceptions\SessionDoesNotExist;
+use Tnapf\SessionInterfaces\Exceptions\SessionDoesNotExist;
 
 interface Controller {
     /**
@@ -13,7 +13,7 @@ interface Controller {
     /**
      * @param string $id
      * 
-     * @throws SessionDoesNotExist **MUST** be thrown if there's no session associated with the provided id
+     * @throws SessionDoesNotExist **MUST** be thrown if there's no session associated with the provided id or if the session is expired
      */
     public function get(string $id): Session;
 

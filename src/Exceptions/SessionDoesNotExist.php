@@ -1,6 +1,6 @@
 <?php
 
-namespace Tnapf\Sessions\Exceptions;
+namespace Tnapf\SessionInterfaces\Exceptions;
 
 use Exception;
 

@@ -14,9 +14,5 @@
             "email": "rsnedeker20@gmail.com"
         }
     ],
-    "require": {
-        "commandstring/utils": "^1.4",
-        "tnapf/router": "^1.1",
-        "tnapf/pdo": "^1.0"
-    }
+    "require": {}
 }

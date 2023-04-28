@@ -12,4 +12,5 @@ interface Session extends JsonSerializable  {
     public function unset(string $key): void;
     public function clear(): void;
     public function save(): void;
+    public function destroy(): void;
 }

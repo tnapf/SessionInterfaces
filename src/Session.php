@@ -1,12 +1,15 @@
 <?php
 
 namespace Tnapf\SessionInterfaces;
+use JsonSerializable;
 
-abstract class Session {
-    public readonly string $id;
-
-    abstract public function set(string $name, string $value): self;
-    abstract public function unset(string $name, string ...$names): self;
-    abstract public function get(string $name): mixed;
-    abstract public function __toString(): string;
+interface Session extends JsonSerializable  {
+    public function __construct(string $id);
+    public function getId(): string;
+    public function has(string $key): bool;
+    public function get(string $key): string;
+    public function set(string $key, mixed $value): string;
+    public function unset(string $key): void;
+    public function clear(): void;
+    public function save(): void;
 }

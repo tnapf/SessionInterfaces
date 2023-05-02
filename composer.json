@@ -1,5 +1,6 @@
 {
     "name": "tnapf/sessioninterfaces",
+    "description": "Interface for building a session controller ",
     "type": "library",
     "license": "MIT",
     "autoload": {
